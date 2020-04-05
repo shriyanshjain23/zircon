@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Brain Tumor</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Titan+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    
+
+<style media="screen">
+.body{
+    background-image : url("{{url_for('static',filename='img/braintumor.jpg')}}");
+      background-position: 40% 20%;
+}
+
+.split1 {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left
+{
+   left: 0;
+
+}
+.split2 {
+  height: 100%;
+  width: 70%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.right
+{
+
+ right: 0;
+
+}
+
+
+
+.centered1 {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered2 {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    
+.centered3 {
+  position: absolute;
+  top: 17%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+.btn-bs-file{
+  position: absolute;
+    top: 67%;
+    left: 18%;
+}
+.btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+
+}
+    .btn-info {
+    color: #fff;
+    background-color: #337ab7;
+        border-color: #17a2b8;}
+.p
+{
+  position: absolute;
+  top: 49%;
+    margin-left: 20px;
+
+
+}
+</style>
+  </head>
+<body class="body" >
+
+<!--<div class=" split1 left" >
+  <div class="centered1">
+    <img class=""  src="braintumor.png" alt="" >
+  </div>
+
+</div>-->
+
+<div class="split2 right">
+  <div >
+      <a href="../logout"><span style="margin-left: 900px; border: 2px;"></span> Logout</a>
+    <h1  class="centered2"  align="center" style="color: #98d6ea; font-size: 60px; font-family: 'Comic Neue', cursive;">BRAIN TUMOR</h1><br>
+      <h1 class="centered3"  align="center" style="color: white;  font-size: 50px; font-family: 'Comic Neue', cursive;"><u>DETECTION</u></h1>
+    <p style=" font-family: 'Lora', serif; color: white;  margin-left: 200px; margin-top: 20%; font-size: 40px; font-family: 'Titan One', cursive;">
+       Your skull, which encloses your brain,</p>
+       <br>
+      <p style=" font-family: 'Titan One', cursive;  color: white;  margin-left: 200px; margin-top: -6%; font-size: 40px;">
+       is very rigid.</p>
+      <br>
+       <p class="p" style=" font-family: 'Lora', serif; color: white; font-size: 20px; margin-left: 200px;">Any growth inside such a restricted space can cause problems. Brain tumors can be cancerous (malignant) or noncancerous (benign).
+       <br>
+        When benign or malignant tumors grow, they can cause the pressure inside your skull to increase. This can cause brain damage, and it can be life-threatening.</p>
+      <form action="/predict" method="post" enctype="multipart/form-data">
+        <label class="btn-bs-file btn btn-xs btn-info">
+
+            Browse Image to Check
+            <input type="file" name="timg" />
+        </label>
+          <input type="submit" name="go" class="btn-bs-file btn btn-xs btn-info" style="margin-left: 220px; background-color: #003a6d;">
+     </form>  
+    </div>
+</div>
+
+  </body>
+</html>

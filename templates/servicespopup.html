@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{{url_for('static',filename='css/servicespopup.css')}}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Permanent Marker' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Euphoria Script' rel='stylesheet'>
+    <title>Services</title>
+</head>
+<body style="background-image: url('{{url_for('static',filename='img/bg1.jpg')}}');">
+    <h2  class="a1">SERVICES</h2>
+    <div class="flip-box"style="margin-left: 200px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h2 style="font-family: 'Euphoria Script';font-size: 50px; color: white;">Disease Predictor</h2>
+        <img src="{{url_for('static',filename='img/ria.jpg')}}" style="width: 150px ; height:150px;">
+    </div>
+    <div class="flip-box-back">
+      <p><a href="popup.html">GET STARTED</a></p>
+    </div>
+  </div>
+</div>
+     <div class="flip-box" style="margin-left: 500px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2 style="font-family: 'Euphoria Script';font-size: 50px; color: white;">Brain Tumor Detection</h2>
+      <img src="{{url_for('static',filename='img/10.jpg')}}" style="width:150px; height:150px;">    
+    </div>
+    <div class="flip-box-back">
+      <p><a href="bt.html">GET STARTED</a></p>
+    </div>
+  </div>
+</div>
+    
+</body>
+</html>

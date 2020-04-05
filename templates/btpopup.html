@@ -1,0 +1,96 @@
+<html>
+    <head>
+    
+        <link href="{{url_for('static',filename='css/btpopup.css')}}" rel="stylesheet">
+ <style>
+     
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px red; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffa41b; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red; 
+}
+     
+</style>
+    </head>
+<body style="background-image: url('{{url_for('static',filename='img/14020.jpg')}}');background-repeat: no-repeat;
+  background-size: 100% 100%;">
+<div class="container1">
+<div class="wrapper fadeInDown ">
+  <div id="formContent" style="background-color: #fce2db; height:500px;  overflow: scroll;">
+  <span onclick=window.open("/","_self") class="close" title="Close Modal">&times;</span>
+      <br>
+      <p style="margin-left: 30px;" align=left><b>Stage</b> : {{stage}} Grade</p>
+      <p style="margin-left: 12px;"><b>Precautions</b> : • avoid exposure to pesticides and insecticides</p>
+      <p style="margin-left: 93px;">•	avoid exposure to carcinogenic chemicals</p>
+      <p style="margin-left: -100px;">•	avoid smoking</p>
+      <p style="margin-left: 85px;">•	avoid unnecessary exposure to radiation</p>
+
+
+
+      <p style="margin-left: 30px;" align=left><b>Treatment</b> : • SURGERY</p>
+      <p style="margin-left: 120px;" align=left>• RADIATION THERAPY</p>
+      <p style="margin-left: 120px;" align=left>• CHEMOTHERAPY</p>
+      <p style="margin-left: 120px;" align=left>• TARGETED THERAPY</p>
+      
+      <p style="margin-left: 30px;" align=left><b>Hospitals</b> : Dr. Ashish Sabharwal(MBBS, M.S., DNB)</p>
+      <p style="margin-left: 82px;">Indraprastha Apollo Hospital, New Delhi, India</p>
+<hr style="margin-left: 120px; margin-right: 40px;">
+      
+      <p style="margin-left: 77px;">Dr. Gagan Gautam(M.Ch, M.S ,DNB ,MBBS)</p>
+      <p style="margin-left: 110px;">Max Super Specialty Hospital Saket, New Delhi, India</p>
+<hr style="margin-left: 120px; margin-right: 40px;">
+
+      <p style="margin-left: 18px;">Dr. Sandeep Batra(MBBS, MD, DNB)</p>
+<p style="margin-left: 110px;">Max Super Specialty Hospital Saket, New Delhi, India</p> 
+<hr style="margin-left: 120px; margin-right: 40px;">
+
+      <p style="margin-left: 70px;">Dr. Ankur Bahl(MBBS, MD, DM - Oncology)</p>
+      <p style="margin-left: 110px;">Max Super Specialty Hospital Saket,New Delhi, India</p>  
+<hr style="margin-left: 120px; margin-right: 40px;">
+
+      
+      <p style="margin-left: 77px;">Dr. Deepak Govil(MBBS, MS (Surgery), Phd)</p>
+      <p style="margin-left: 82px;"> Indraprastha Apollo Hospitals, New Delhi, India</p>
+<hr style="margin-left: 120px; margin-right: 40px;">
+
+      <p style="margin-left: 100px;">Dr. Tejinder Kataria(M.B.B.S, M.D. Radiotherapy, DNB Radiotherapy)</p>
+      <p style="margin-left: 77px;">Medanta The Medicity, Gurgaon, India</p> 
+<hr style="margin-left: 120px; margin-right: 40px;">
+
+      <p style="margin-left: 77px;">Dr. Praveen Kumar Garg(MBBS, MS, M.Ch)</p>
+<p style="margin-left: 82px;">Indraprastha Apollo Hospitals,New Delhi, India</p>
+<hr style="margin-left: 120px; margin-right: 40px;">
+      
+      
+      <p style="margin-left: 77px;">Dr. Amit Goel(M.S. (General Surgery), MCh (Urology), Fellowship (Uro Oncology & Robotic Surger))</p>
+      <p style="margin-left: 77px;">Narayana Superspeciality Hospital, Gurgaon, India</p> 
+<hr style="margin-left: 120px; margin-right: 40px;">
+      
+<p style="margin-left: 77px;">Dr. Surajkumar K Agrawal(
+    M.B.B.S, M.S. (General Surgery), M.Ch (Surgical Oncology))</p>
+      <p style="margin-left: 77px;">Alexis Multispeciality Hospital, Nagpur, India</p>  
+
+    
+
+      
+ </div>
+</div>
+</div>
+</body>
+</html>
